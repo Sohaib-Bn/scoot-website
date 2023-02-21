@@ -1,0 +1,1134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+h2, h3, h4 {
+    color: hsl(216, 17%, 35%);
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    color: hsl(218, 12%, 62%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.65;
+}
+
+/* top-section */
+
+  /* heading */
+
+    .heading {
+        position: relative;
+        background-color: #FFF;
+        padding: 6% 9%;
+        z-index: 100;
+    }
+
+    .head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 64%;
+    }
+
+    .logo-heading {
+        width: 80px;
+    }
+
+    .hamburger {
+        width: 22.5px;
+        cursor: pointer;
+    }
+
+       /* menu */ 
+
+       .close-list {
+           display: none;
+           cursor: pointer;
+       }
+
+         .bg {
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            background-color: #000000;
+            opacity: 0;
+            z-index: -5;
+         }
+
+         .wrapper {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            top: 0;
+            left: -100%;
+            width: 69vw;
+            height: 100vh;
+            background-color: #333A44;
+            padding: 35% 8% 6% 8%;
+            text-align: left;
+            z-index: 10;
+         }
+
+         .wrapper ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+         }
+
+         .wrapper a {
+            text-decoration: none;
+            color: hsla(0, 0%, 100%, 0.943);
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: 15%;
+            cursor: pointer;
+        }
+
+        .wrapper a:hover {
+            color: hsl(40, 97%, 58%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .wrapper button {
+            color: hsl(214, 37%, 96%);
+            font-size: 0.95rem;
+            padding: 7% 17%;
+            background-color: hsl(40, 97%, 58%);
+            border: 2px solid hsl(40, 97%, 58%);
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 300;   
+            box-shadow: 0 10px 20px, rgb(0, 0, 0 ,20%) 0 10px 20px rgb(0, 0, 0 ,20%);
+        }
+
+       
+        /* js-classes */
+
+        .stop-scrooling {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .show-menu {
+            left: 0;
+            opacity: 100%;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .show-bg {
+            opacity: 75%;
+            transition: all 0.3s ease-in-out;
+            z-index: 5;
+        }
+
+        .show-close {
+            display: block;
+        }
+
+        .hide-hamburger {
+            display: none;
+        }
+
+        .hide-menu {
+            left: -100%;
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .hide-bg {
+            opacity: 0;
+            z-index: -5;
+            transition: all 0.3s ease-in-out;
+        }
+
+    /* intro*/
+
+    .intro {
+        position: relative;
+        background-image: url(./assets/images/careers-location-hero-mobile.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 19% 9% 0 9%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .intro h1 {
+        color: #FFF;
+        font-size: 2.4rem;
+        line-height: 1.1;
+        font-weight: 400;
+        margin-bottom: 18%;
+    }
+
+/* middel-section*/
+
+#middel-section {
+    text-align: center;
+    padding: 20% 0 25% 0;
+}
+
+.line-sp {
+    display: none;
+}
+
+.circle-bg {
+    display: none;
+}
+
+/* short-part */
+
+.short {
+    overflow: hidden;
+    padding: 0 9%;
+    margin-bottom: 35%;
+}
+
+.short-img{
+    border-radius: 100%;
+    position: relative;
+    z-index: -10;
+}
+
+.short h3 ,.propreties-part h3{
+    font-size: 1.9rem;  
+    font-weight: 400;
+    margin-bottom: 8%;
+    line-height: 1.1;
+}
+
+.easy {
+    padding: 0 12%;
+}
+
+#join {
+    margin-bottom: 16%;
+}
+
+#zero {
+    margin-bottom: 20%;
+}
+
+.short p {
+    margin-bottom: 20%;
+}
+
+.mix-img {
+    margin-bottom: 20%;
+    position: relative;
+}
+
+.arrow-1{
+    max-width: 300%;
+    width: 240%;
+    position: absolute;
+    z-index: -10;
+    bottom: 0;
+    left: 0;
+}
+
+.short button ,  .apply button{
+    color: hsl(214, 37%, 96%);
+    font-size: 0.95rem;
+    padding: 5% 17%;
+    background-color: hsl(40, 97%, 58%);
+    border: 2px solid hsl(40, 97%, 58%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;   
+    box-shadow: 0 10px 20px, rgb(0, 0, 0 ,20%) 0 10px 20px rgb(0, 0, 0 ,20%);
+}
+
+.short button:hover, .apply button:hover , .wrapper button:hover{
+    border: 2px solid hsl(40, 97%, 58%);
+    background: transparent;
+    color: hsl(40, 97%, 58%);
+    transition: all 0.3s ease-in-out;
+} 
+
+.apply button {
+    margin-top: 7%;
+    padding: 6% 17%;
+    width: 100%;
+}
+
+
+/* propreties-part */
+
+.propreties-part {
+    padding: 0 9%;
+    position: relative;
+ }
+ 
+ .prop {
+     margin-bottom: 20%;
+ }
+ 
+ .prop img {
+     width: auto;
+     border-radius: 100%;
+     margin-bottom: 11%;
+ }
+ 
+ .propreties-part h4 {
+     font-weight: 400;
+     font-size: 1.4rem;
+     color: hsl(216, 17%, 35%);
+     margin-bottom: 7%;
+ }
+ 
+ .prop p {
+     font-size: 0.95rem;
+     margin-bottom: 10%;
+     color: hsl(218, 12%, 62%);
+ }
+
+ #num {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    height: 34%;
+    background-color: hsl(40, 97%, 58%);
+    border-radius: 100%;
+    border: none;
+ }
+
+ #num h3 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: 300;
+ }
+
+  .mix-2 {
+    position: relative;
+  }
+
+ /* Apply-part */
+
+ .Apply-part {
+    text-align: center;
+    padding: 25% 9% 0 9% ;
+ }
+
+ .apply {
+    padding: 13% 9% 9% 9%; 
+    background-color: hsl(214, 37%, 96%);
+    margin-bottom: 6%;
+    cursor: pointer;
+ }
+
+ .apply h4 {
+    font-size: 1.1rem;
+    margin-bottom: 2%;
+    position: relative;
+    font-weight: 300;
+ }
+
+ .apply p {
+    color: hsl(216, 17%, 35%);
+    font-size: 0.95rem;
+ }
+
+ /* bottom-section */
+
+.download-part {
+    background: url(./assets/patterns/semi-circles.svg);
+    background-repeat: no-repeat;
+    background-position: 74% bottom;
+    background-size: 400%;
+    text-align: center;
+    padding: 25% 9%;
+    background-color: hsl(216, 17%, 35%);
+}
+
+.download-part h1 {
+    color: #FFF;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 12%;
+}
+
+.download-buttons {
+    padding: 0 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.download-buttons button {
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    padding: 13% 9% 25% 9%;
+    background-color: #333A44;
+}
+
+.footer h1 {
+    color: #FFF;
+    font-size: 2.5rem;
+    font-family: 'Space Mono', monospace;;
+    margin-bottom: 10%;
+}
+
+.menu-footer {
+    margin-bottom: 27%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.menu-footer a {
+    text-decoration: none;
+    color: hsl(218, 12%, 62%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.menu-footer a:hover {
+    color: hsl(40, 97%, 58%);
+    transition: all 0.3s ease-in-out;
+}
+
+.social-media-contact {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.fab {
+    font-size: 27px;
+    color: hsl(40, 97%, 58%);
+    cursor: pointer;
+}
+
+.fab:hover{
+    color: hsl(0, 0%, 100%);
+    transition: all 0.3s ease-in-out;
+}
+
+/* meduime-screen(tablet-screen) */
+
+@media (min-width:700px) and (max-width:999px) {
+
+    /* .heading */
+
+    .heading {
+        padding: 0%;
+    }
+
+    .bg {
+        display: none;
+    }
+
+    .heading-part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0rem;
+        padding: 3% 4%;
+    }
+
+    .logo-heading {
+        max-width: 300%;
+        width: 130%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* menu */
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        left: 0;
+        height: auto;
+        /* width: 100vw; */
+        background-color: transparent;
+        padding: 0;
+        z-index: 10;
+     }
+
+     .wrapper ul {
+        transform: translateX(-15px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+     }
+
+     .wrapper a {
+        color: hsl(216, 17%, 35%);
+        font-size: 0.85rem;
+        margin-bottom: 0;
+    }
+
+    .wrapper button {
+        padding: 2.5% 8%;
+        font-size: 0.85rem;
+    }
+
+    /* intro  */
+
+    .intro {
+        background-image: url(./assets/images/careers-locations-hero-tablet.jpg);
+        display: flex;
+        background-size: 100% 100%;
+        padding: 10% 9% 6% 12%;
+    }
+
+    .intro h1 {
+        font-size: 3rem;
+        margin-bottom: 1%;
+    }
+
+    .intro p {
+        color: hsl(214, 37%, 96%); 
+        margin-bottom: 6%;    
+    }
+
+    .intro button, .short button {
+        padding: 2.5% 9%;
+        margin-bottom: 0;
+    }
+
+    .intro img {
+        max-width: 150%;
+        width: auto;
+        transform: translateX(-43%);
+    }
+
+    .arrow-circles {
+        display: flex;
+        align-items: flex-end;
+        gap: 3.9rem;
+    }
+
+    .circles {
+        transform: translateY(-10px);
+        position: absolute;
+        right: -3%;
+        display: flex;
+        gap: 1.2rem;
+    }
+
+    .circle {
+        width: 52px;
+        height: 52px;
+        background: transparent;
+        border-radius: 100%;
+        border: 2.65px solid #FFF;
+    }
+
+    .empty-circle {
+        width: 52px;
+        height: 52px;
+        background-color: #FFF;
+        border-radius: 100%;
+        border: 2.65px solid #FFF;
+    }
+
+/* middel-section */
+
+   #middel-section {
+    padding-bottom: 15%;
+   }
+
+    /* short */
+
+    .short {
+        margin-bottom: 10%;
+        padding: 0 10%;
+        position: relative;
+    }
+
+    .short h3 {
+        font-size: 2.5rem;
+        margin-bottom: 5%;
+    }
+
+    .short p {
+        margin-bottom: 8%;
+    }
+
+    #easy {
+        padding: 0 10%;
+        margin-bottom: 4%;
+    } 
+
+    .mix-img {
+        margin-bottom: 10%;
+    }
+
+    .line-sp {
+        display: block;
+        position: absolute;
+        bottom: 30.1%;
+        right: -20%;
+        z-index: 5;
+    }    
+
+    .circle-bg {
+        z-index: -20;
+        display: block;
+        position: absolute;
+    }
+
+    .circle-bg-1 {
+      right: -70%;
+    }
+
+    .arrow-1, .arrow-2, .arrow-3 {
+        width: auto;
+        position: absolute;
+    }
+
+    .arrow-1 {
+        left: -55px;
+    }
+
+    .arrow-2 {
+        right: 55%;
+    }
+
+    /* propreties */
+
+    .propreties-part {
+       position: relative;
+       padding: 5% 16%;
+       text-align: center;
+    }
+
+    .prop {
+        margin-bottom: 20%;
+    }
+
+    .propreties-part h3 {
+        font-size: 2.5rem;
+    }
+
+    
+    .propreties-part h4 {
+        font-size: 1.4rem;
+        margin-bottom: 4%;
+    }
+    
+    .propreties-part p {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+    }
+    
+    #num {
+        height: 31%;
+        width: 18%;
+        font-size: 1.5rem;
+        bottom: 12px;
+    }
+
+   /* apply-part  */
+
+   .Apply-part {
+    padding: 0 6%;
+   }
+
+   .apply {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 6%;
+    margin-bottom: 3%;
+   }
+
+   .apply button {
+    width: auto;
+    margin-top: 0;
+    padding: 3% 13%;
+   }
+
+   .apply h4 {
+    font-size: 1.2rem;
+     font-weight: 400;
+   }
+
+    /* bottom-section */
+
+    /* download-part */
+
+    .download-part {
+        padding: 11% 9% 9% 9%;
+        background-size: 180%;
+        background-position: 55% bottom;
+    }
+
+    .download-part h1 {
+        font-size: 2.6rem;
+        padding: 0 10%;
+        margin-bottom: 5%;
+    }
+
+    /* footer */
+
+    .footer {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 3rem;
+        padding: 3% 5%;
+    }
+
+    .footer h1 , .menu-footer {
+        margin-bottom: 0;
+    }
+
+    .menu-footer {
+        gap: 2.5rem;
+       flex-direction: row;
+    }
+
+    .menu-footer a {
+        font-size: 0.85rem;
+    }
+
+    .mini-footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+} 
+
+
+@media (min-width:1000px) and (max-width:1440px) {
+
+    /* .heading */
+
+    .heading {
+        padding: 0%;
+    }
+    
+    .heading-part {
+        display: flex;
+        align-items: center;
+        gap: 7rem;
+        padding: 2% 12%;
+    }
+
+    .bg {
+        display: none;
+    }
+
+    .logo-heading {
+        max-width: 300%;
+        width: 200%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* menu */
+
+    .menu {
+        width: 100%;
+    }
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        left: 0;
+        height: auto;
+        width: 100%;
+        background-color: transparent;
+        padding: 0;
+        z-index: 10;
+     }
+
+     .wrapper ul {
+        transform: translateX(-15px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.5rem;
+     }
+
+     .wrapper a {
+        color: hsl(216, 17%, 35%);
+        font-size: 0.95rem;
+        margin-bottom: 0;
+    }
+
+    .wrapper button ,.intro button, .short button{
+        padding: 1.5% 6%;
+        font-size: 0.95rem;
+    }
+
+    /* intro*/
+
+    .intro {
+        background-image: url(./assets/images/careers-locations-hero-desktop.jpg);
+        background-size: 100% 100%;
+        padding: 7% 12% 4% 12%;
+        text-align: left;
+    }
+
+    .intro h1 {
+        width: 60%;
+        font-size: 2.8rem;
+        margin-bottom: 2%;
+    }
+
+    .intro p {
+        font-size: 0.85rem;
+        color: hsl(214, 37%, 96%); 
+        margin-bottom: 10%;    
+    }
+
+    .line-desktop {
+        display: block;
+        height: 2%;
+    }
+
+    .line {
+        position: absolute;
+        left: 0%;
+        padding-top: 37px;
+        height: 130%;
+    }
+
+    .arrow-intro {
+        transform: translateX(0%);
+        max-width: 300%;
+        width: 90%;
+    }
+    
+    .p-btn {
+        padding-left: 9%;
+        width: 100%;
+    }
+
+    .pc-design {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+
+    .arrow-circles {
+        padding-top: 33px;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        gap: 3.9rem;
+    }
+
+    .circles {
+        position: absolute;
+        right: -3%;
+        display: flex;
+        top: 40%;
+        gap: 1.2rem;
+    }
+
+    .circle {
+        width: 52px;
+        height: 52px;
+        background: transparent;
+        border-radius: 100%;
+        border: 2.65px solid #FFF;
+    }
+
+    .empty-circle {
+        width: 52px;
+        height: 52px;
+        background-color: #FFF;
+        border-radius: 100%;
+        border: 2.65px solid #FFF;
+    }
+
+    .intro button , .short button{
+        font-size: 0.9rem;
+        padding:  3.5% 13%;
+        font-size: 0.95rem;
+    }
+
+    /* middel-section */
+
+#middel-section {
+    padding: 10% 0 0 0;
+}
+
+     /* short */
+
+     .short {
+        padding: 0 12%;
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 10rem;
+        position: relative;
+    }
+
+    .coming-short {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .text {
+        width: 50%;
+        padding-top: 8%;
+        text-align: left;
+    }
+
+    .easy {
+        padding-left: 0;
+        margin-bottom: 5%;
+    }
+
+    #join {
+        margin-bottom: 10%;
+    }
+
+    .short h3 {
+        font-size: 2.5rem;
+        margin-bottom: 3%;
+    }
+
+    .short p {
+        margin-bottom: 8%;
+        font-size: 0.85rem;
+    }
+
+    .mix-img {
+        width: 45%;
+        margin-bottom: 0%;
+    }
+
+    .coming-mix {
+        width: 50%;
+        margin-bottom: 0%;
+    }
+
+    .coming-text {
+        width: 45%;
+    }
+
+    .line-sp {
+        display: none;
+    }    
+
+    .circle-bg {
+        display: block;
+        position: absolute;
+    }
+
+    .circle-bg-1 {
+    z-index: -20;
+      right: -113%;
+    }
+
+    .arrow-1{
+        width: auto;
+        position: absolute;
+    }
+
+    .arrow-1 {
+        left: -100px;
+        bottom: 7%;
+    }
+
+    /* propreties */
+
+    .propreties-part {
+        position: relative;
+        padding: 0 12%;
+        text-align: center;
+     }
+ 
+     .propreties-part h3 {
+         margin-bottom: 10%;
+         font-size: 2.5rem;
+     }
+ 
+     .mini-prop {
+         display: flex;
+         align-items: flex-end;
+         gap: 1rem;
+     }
+ 
+     .prop {
+         margin-bottom: 0%;
+     }
+ 
+     .prop img {
+         width: 220px;
+     }
+ 
+     .prop h4 {
+         margin-bottom: 6%;
+         font-size: 1.2rem;
+     }
+ 
+     .propreties-part p {
+         margin-bottom: 0;
+         font-size: 0.85rem;
+     }
+ 
+     #num {
+         height: 80px;
+         width: 80px;
+     }
+ 
+     #num h3 {
+         font-size: 1.3rem;
+     }
+ 
+     #easy {
+         margin-bottom: 3%;
+     }
+ 
+     .mix-2 {
+         position: relative; 
+         margin-bottom: 10%;
+     }
+
+     /* apply-part  */
+
+   .Apply-part {
+    padding: 10% 12%;
+   }
+
+   .apply {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4%;
+    margin-bottom: 2.5%;
+   }
+
+   .apply button {
+    width: auto;
+    margin-top: 0;
+    padding:  1.5% 7%;
+   }
+
+   .apply h4 {
+    font-size: 1.2rem;
+     font-weight: 400;
+   }
+
+
+    /* bottom-section */
+
+    /* download-part */
+
+    .download-part {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 8% 12%;
+        background-size: 100%;
+        background-position: 300px bottom;
+    }
+
+    .download-buttons {
+        padding: 0%;
+    }
+
+    .download-part h1 {
+        font-size: 2.6rem;
+        padding: 0;
+        width: 50%;
+        margin-bottom: 0%;
+    }
+
+    /* footer */
+
+    .footer {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 3rem;
+        padding: 2% 12%;
+    }
+
+    .footer h1 , .menu-footer {
+        margin-bottom: 0;
+        font-size: 2.9rem;
+    }
+
+    .menu-footer {
+        gap: 2.5rem;
+       flex-direction: row;
+       align-items: center;
+    }
+
+    .menu-footer a {
+        font-size: 0.95rem;
+        position: relative;
+        bottom: 10px;
+        transform: translateY(-5px);
+    }
+
+    .mini-footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+ 
+
+}
+
+

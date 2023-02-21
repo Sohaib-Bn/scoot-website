@@ -1,0 +1,831 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+h2, h3, h4 {
+    color: hsl(216, 17%, 35%);
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    color: hsl(218, 12%, 62%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.65;
+}
+
+/* top-section */
+
+  /* heading */
+
+    .heading {
+        position: relative;
+        background-color: #FFF;
+        padding: 6% 9%;
+        z-index: 100;
+    }
+
+    .head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 64%;
+    }
+
+    .logo-heading {
+        width: 80px;
+    }
+
+    .hamburger {
+        width: 22.5px;
+        cursor: pointer;
+    }
+
+       /* menu */ 
+
+       .close-list {
+           display: none;
+           cursor: pointer;
+       }
+
+         .bg {
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            background-color: #000000;
+            opacity: 0;
+            z-index: -5;
+         }
+
+         .wrapper {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            top: 0;
+            left: -100%;
+            width: 69vw;
+            height: 100vh;
+            background-color: #333A44;
+            padding: 35% 8% 6% 8%;
+            text-align: left;
+            z-index: 10;
+         }
+
+         .wrapper ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+         }
+
+         .wrapper a {
+            text-decoration: none;
+            color: hsla(0, 0%, 100%, 0.943);
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: 15%;
+            cursor: pointer;
+        }
+
+        .wrapper a:hover {
+            color: hsl(40, 97%, 58%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .wrapper button {
+            color: hsl(214, 37%, 96%);
+            font-size: 0.95rem;
+            padding: 7% 17%;
+            background-color: hsl(40, 97%, 58%);
+            border: 2px solid hsl(40, 97%, 58%);
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 300;   
+            box-shadow: 0 10px 20px, rgb(0, 0, 0 ,20%) 0 10px 20px rgb(0, 0, 0 ,20%);
+        }
+
+       
+        /* js-classes */
+
+        .stop-scrooling {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .show-menu {
+            left: 0;
+            opacity: 100%;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .show-bg {
+            opacity: 75%;
+            transition: all 0.3s ease-in-out;
+            z-index: 5;
+        }
+
+        .show-close {
+            display: block;
+        }
+
+        .hide-hamburger {
+            display: none;
+        }
+
+        .hide-menu {
+            left: -100%;
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .hide-bg {
+            opacity: 0;
+            z-index: -5;
+            transition: all 0.3s ease-in-out;
+        }
+
+    /* intro*/
+
+    .intro {
+        position: relative;
+        background-image: url(./assets/images/careers-location-hero-mobile.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 19% 9% 0 9%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .intro h1 {
+        color: #FFF;
+        font-size: 2.4rem;
+        line-height: 1.1;
+        font-weight: 400;
+        margin-bottom: 18%;
+    }
+
+/* middel-section*/
+
+#middel-section {
+    text-align: center;
+    padding: 20% 0 25% 0;
+}
+
+/* short-part */
+
+.location{
+    overflow: hidden;
+    padding: 0 9%;
+}
+
+.location-img-mobile {
+    position: relative;
+    margin-bottom: 15%;
+    z-index: -10;
+}
+
+.location-img-tablet {
+    display: none;
+}
+
+.location-img-desktop {
+    display: none;
+}
+
+.contries-part {
+    margin-bottom: 30%;
+}
+
+.contries {
+    position: relative;
+    padding: 7%;
+    background-color: hsl(39, 100%, 94%);
+    margin-bottom: 5%;
+    z-index: -10;
+}
+
+.contries h3 {
+    font-size: 1.35rem;
+    font-weight: 300;
+}
+
+.easy {
+    font-size: 1.8rem;  
+    font-weight: 400;
+    margin-bottom: 20%;
+    line-height: 1.1;
+}
+
+.location p {
+    margin-bottom: 15%;
+    font-size: 0.85rem;
+}
+
+.location button {
+    color: hsl(214, 37%, 96%);
+    font-size: 0.85rem;
+    padding: 5% 17%;
+    background-color: hsl(40, 97%, 58%);
+    border: 2px solid hsl(40, 97%, 58%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;   
+    box-shadow: 0 10px 20px, rgb(0, 0, 0 ,20%) 0 10px 20px rgb(0, 0, 0 ,20%);
+}
+
+.location button:hover , .wrapper button:hover {
+    border: 2px solid hsl(40, 97%, 58%);
+    background: transparent;
+    color: hsl(40, 97%, 58%);
+    transition: all 0.3s ease-in-out;
+} 
+
+ /* bottom-section */
+
+.download-part {
+    background: url(./assets/patterns/semi-circles.svg);
+    background-repeat: no-repeat;
+    background-position: 74% bottom;
+    background-size: 400%;
+    text-align: center;
+    padding: 25% 9%;
+    background-color: hsl(216, 17%, 35%);
+}
+
+.download-part h1 {
+    color: #FFF;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 12%;
+}
+
+.download-buttons {
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.download-buttons button {
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    padding: 13% 9% 25% 9%;
+    background-color: #333A44;
+}
+
+.footer h1 {
+    color: #FFF;
+    font-size: 2.5rem;
+    font-family: 'Space Mono', monospace;;
+    margin-bottom: 10%;
+}
+
+.menu-footer {
+    margin-bottom: 27%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.menu-footer a {
+    text-decoration: none;
+    color: hsl(218, 12%, 62%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.menu-footer a:hover {
+    color: hsl(40, 97%, 58%);
+    transition: all 0.3s ease-in-out;
+}
+
+.social-media-contact {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.fab {
+    font-size: 27px;
+    color: hsl(40, 97%, 58%);
+    cursor: pointer;
+}
+
+.fab:hover{
+    color: hsl(0, 0%, 100%);
+    transition: all 0.3s ease-in-out;
+}
+
+/* meduime-screen(tablet-screen) */
+
+@media (min-width:700px) and (max-width:999px) {
+
+    /* .heading */
+
+    .heading {
+        padding: 0%;
+    }
+
+    .bg {
+        display: none;
+    }
+
+    .heading-part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0rem;
+        padding: 3% 4%;
+    }
+
+    .logo-heading {
+        max-width: 300%;
+        width: 130%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* menu */
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        left: 0;
+        height: auto;
+        /* width: 100vw; */
+        background-color: transparent;
+        padding: 0;
+        z-index: 10;
+     }
+
+     .wrapper ul {
+        transform: translateX(-15px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+     }
+
+     .wrapper a {
+        color: hsl(216, 17%, 35%);
+        font-size: 0.85rem;
+        margin-bottom: 0;
+    }
+
+    .wrapper button {
+        padding: 2.5% 8%;
+        font-size: 0.85rem;
+    }
+
+    /* intro  */
+
+    .intro {
+        background-image: url(./assets/images/careers-locations-hero-tablet.jpg);
+        display: flex;
+        background-size: 100% 100%;
+        padding: 10% 9% 6% 12%;
+    }
+
+    .intro h1 {
+        font-size: 3rem;
+        margin-bottom: 1%;
+    }
+
+    .intro p {
+        color: hsl(214, 37%, 96%); 
+        margin-bottom: 6%;    
+    }
+
+    .intro button, .short button {
+        padding: 2.5% 9%;
+        margin-bottom: 0;
+    }
+
+    .intro img {
+        max-width: 150%;
+        width: auto;
+        transform: translateX(-43%);
+    }
+
+    .arrow-circles {
+        display: flex;
+        align-items: flex-end;
+        gap: 3.9rem;
+    }
+
+    .circles {
+        transform: translateY(-10px);
+        position: absolute;
+        right: -3%;
+        display: flex;
+        gap: 1.2rem;
+    }
+
+    .circle {
+        width: 52px;
+        height: 52px;
+        background: transparent;
+        border-radius: 100%;
+        border: 2.65px solid #FFF;
+    }
+
+    .empty-circle {
+        width: 52px;
+        height: 52px;
+        background-color: #FFF;
+        border-radius: 100%;
+        border: 2.65px solid #FFF;
+    }
+
+/* middel-section */
+
+#middel-section {
+    padding: 20% 0;
+}
+
+.location-img-mobile {
+    display: none;
+}
+
+.location-img-tablet {
+    margin-bottom: 15%;
+    display: block;
+}
+
+.contries-part {
+    display: none;
+}
+
+.easy {
+    font-size: 2.4rem;
+    margin-bottom: 15%;
+}
+
+.location p {
+    margin-bottom: 8%;
+}
+
+.location button {
+    padding: 3% 9%;
+}
+
+
+/* bottom-section */
+
+    /* download-part */
+
+    .download-part {
+        padding: 11% 9% 9% 9%;
+        background-size: 180%;
+        background-position: 55% bottom;
+    }
+
+    .download-part h1 {
+        font-size: 2.6rem;
+        padding: 0 10%;
+        margin-bottom: 5%;
+    }
+
+    /* footer */
+
+    .footer {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 3rem;
+        padding: 3% 5%;
+    }
+
+    .footer h1 , .menu-footer {
+        margin-bottom: 0;
+    }
+
+    .menu-footer {
+        gap: 2.5rem;
+       flex-direction: row;
+    }
+
+    .menu-footer a {
+        font-size: 0.85rem;
+    }
+
+    .mini-footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+} 
+
+/* desktop-screen */
+
+
+
+@media (min-width:1000px) and (max-width:1440px) {
+
+    /* .heading */
+
+    .heading {
+        padding: 0%;
+    }
+    
+    .heading-part {
+        display: flex;
+        align-items: center;
+        gap: 7rem;
+        padding: 2% 12%;
+    }
+
+    .bg {
+        display: none;
+    }
+
+    .logo-heading {
+        max-width: 300%;
+        width: 200%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* menu */
+
+    .menu {
+        width: 100%;
+    }
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        left: 0;
+        height: auto;
+        width: 100%;
+        background-color: transparent;
+        padding: 0;
+        z-index: 10;
+     }
+
+     .wrapper ul {
+        transform: translateX(-15px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.5rem;
+     }
+
+     .wrapper a {
+        color: hsl(216, 17%, 35%);
+        font-size: 0.95rem;
+        margin-bottom: 0;
+    }
+
+    .wrapper button ,.intro button, .short button{
+        padding: 1.5% 6%;
+        font-size: 0.95rem;
+    }
+
+    /* intro*/
+
+    .intro {
+        background-image: url(./assets/images/careers-locations-hero-desktop.jpg);
+        background-size: 100% 100%;
+        padding: 7% 12% 4% 12%;
+        text-align: left;
+    }
+
+    .intro h1 {
+        width: 60%;
+        font-size: 2.8rem;
+        margin-bottom: 2%;
+    }
+
+    .intro p {
+        font-size: 0.85rem;
+        color: hsl(214, 37%, 96%); 
+        margin-bottom: 10%;    
+    }
+
+    .line-desktop {
+        display: block;
+        height: 2%;
+    }
+
+    .line {
+        position: absolute;
+        left: 0%;
+        padding-top: 37px;
+        height: 130%;
+    }
+
+    .arrow-intro {
+        transform: translateX(0%);
+        max-width: 300%;
+        width: 90%;
+    }
+    
+    .p-btn {
+        padding-left: 9%;
+        width: 100%;
+    }
+
+    .pc-design {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+
+    .arrow-circles {
+        padding-top: 33px;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        gap: 3.9rem;
+    }
+
+    .circles {
+        position: absolute;
+        right: -3%;
+        display: flex;
+        top: 40%;
+        gap: 1.2rem;
+    }
+
+    .circle {
+        width: 52px;
+        height: 52px;
+        background: transparent;
+        border-radius: 100%;
+        border: 2.65px solid #FFF;
+    }
+
+    .empty-circle {
+        width: 52px;
+        height: 52px;
+        background-color: #FFF;
+        border-radius: 100%;
+        border: 2.65px solid #FFF;
+    }
+
+    .intro button , .short button{
+        font-size: 0.9rem;
+        padding:  3.5% 13%;
+        font-size: 0.95rem;
+    }
+
+    /* middel-section */
+
+#middel-section {
+    padding: 10% 12%;
+}
+
+.location-img-mobile {
+    display: none;
+}
+
+.location-img-tablet {
+    display: none;
+}
+
+.location-img-desktop {
+    margin: auto;
+    margin-bottom: 12%;
+    display: block;
+    width: 80%;
+}
+
+.contries-part {
+    display: none;
+}
+
+.location {
+    padding: 0;
+    text-align: center;
+}
+
+.location p {
+    margin-bottom: 0%;
+}
+
+.easy {
+    margin: 0;
+    font-size: 2.2rem;
+    width: 90%;
+}
+
+.location button {
+    width: 50%;
+    padding: 1.5% 3%;
+}
+
+.location-options {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+/* bottom-section */
+
+    /* download-part */
+
+    .download-part {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 8% 12%;
+        background-size: 100%;
+        background-position: 300px bottom;
+    }
+
+    .download-buttons {
+        padding: 0%;
+    }
+
+    .download-part h1 {
+        font-size: 2.6rem;
+        padding: 0;
+        width: 50%;
+        margin-bottom: 0%;
+    }
+
+    /* footer */
+
+    .footer {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 3rem;
+        padding: 2% 12%;
+    }
+
+    .footer h1 , .menu-footer {
+        margin-bottom: 0;
+        font-size: 2.9rem;
+    }
+
+    .menu-footer {
+        gap: 2.5rem;
+       flex-direction: row;
+       align-items: center;
+    }
+
+    .menu-footer a {
+        font-size: 0.95rem;
+        position: relative;
+        bottom: 10px;
+        transform: translateY(-5px);
+    }
+
+    .mini-footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+}
+
